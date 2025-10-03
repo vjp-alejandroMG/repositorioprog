@@ -17,15 +17,12 @@ public class Ej26_T2 {
      */
     public static void main(String[] args) {
         
-         Scanner scanner = new Scanner(System.in);
-
+        Scanner scanner = new Scanner(System.in);
+        // Pido un numero de 4 cifras
         System.out.print("Por favor, introduzca un número de 4 cifras: ");
         int numero = scanner.nextInt();
 
-        // Validar que el número tenga exactamente 4 cifras
-        if (numero < 1000 || numero > 9999) {
-            System.out.println("Error: Debes introducir un número de 4 cifras.");
-        } else {
+            // Declaro variables
             int primera = numero / 1000;
             int segunda = (numero / 100) % 10;
             int tercera = (numero / 10) % 10;
@@ -38,4 +35,4 @@ public class Ej26_T2 {
         }
     }
     
-}
+
